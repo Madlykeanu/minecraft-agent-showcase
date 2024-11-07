@@ -49,7 +49,7 @@ const Landing: React.FC = () => {
       </header>
 
       <div className="subtitle-container">
-        <p className="subtitle-text">some agent stuff i've been working on that i think is pretty cool :D</p>
+        <p className="subtitle-text">some AI agent stuff i've been working on that i think is pretty cool :D</p>
       </div>
 
       <section className="demo-video-section">
@@ -154,7 +154,7 @@ const Landing: React.FC = () => {
                   The main purpose of the benchmarking system is mainly to make identifying areas for improvement easy by providing detailed metrics of agent performance.
                 </p>
                 <p className="benchmark-description">
-                  It works by creating a fresh minecraft server, giving the agent a goal, waiting for it to complete the goal, then repeating until the specified amount of runs is completed.
+                  It works by creating a fresh minecraft server, giving the agent a goal, waiting for it to complete the goal, then repeating until the specified amount of runs is completed, after which a final summary is created.
                 </p>
                 <div className="benchmark-grid">
                   <div className="benchmark-item">
@@ -202,15 +202,50 @@ const Landing: React.FC = () => {
               <div className="feature-section">
                 <h4>Key Capabilities</h4>
                 <ul>
-                  <li>Dynamic code generation using GPT-4o or Claude thats tailored to its current environment and the specific task</li>
+                  <li>Dynamic code generation using GPT-4o or Claude 3-5 sonnet</li>
                   <li>Real-time execution and monitoring</li>
                   <li>Automatic error handling and code regeneration</li>
-                  <li>Task-specific optimization</li>
+                  <li>Code optimized to the specific task and situation</li>
                 </ul>
               </div>
 
               
             </div>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="other-projects-section">
+        <h2>Other Programming Projects</h2>
+        <div className="other-projects-grid">
+          <motion.div 
+            className="feature-card"
+            whileHover={{ scale: 1.02 }}
+          >
+            <div className="feature-card-header">
+              <FiTerminal size={24} />
+              <h3>Project Alpha</h3>
+            </div>
+            <p>
+              A sophisticated data processing pipeline that handles real-time analytics 
+              and visualization. Built with Python and React, it processes millions of 
+              data points efficiently.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            className="feature-card"
+            whileHover={{ scale: 1.02 }}
+          >
+            <div className="feature-card-header">
+              <FiBox size={24} />
+              <h3>Project Beta</h3>
+            </div>
+            <p>
+              An automated testing framework that integrates with CI/CD pipelines to 
+              ensure code quality. Features include parallel test execution and detailed 
+              reporting capabilities.
+            </p>
           </motion.div>
         </div>
       </section>
