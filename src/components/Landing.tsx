@@ -66,6 +66,14 @@ const Landing: React.FC = () => {
               <source src="/videos/mc-agent-1-demo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <a 
+              href="https://youtu.be/KV7b9kYWZeE" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="video-fallback-link"
+            >
+              Alternate link if video doesn't load
+            </a>
             <p className="demo-caption">
               MC-agent-1 gathering wood using self-generated Mineflayer code. 
               The agent receives a natural language command and then dynamically writes and executes the necessary code to complete that specific task.
@@ -78,10 +86,19 @@ const Landing: React.FC = () => {
               className="demo-video"
               controls
               playsInline
+              preload="none"
             >
               <source src="/videos/mc-agent-benchmark.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <a 
+              href="https://youtu.be/kITiuxO1aEA" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="video-fallback-link"
+            >
+              Alternate link if video doesn't load
+            </a>
             <p className="demo-caption">
               MC-Agent completing "stone pickaxe" scenario from scratch in under 80 seconds using gpt-4o-mini. 
               The agent autonomously gathers wood, crafts tools, mines stone, and crafts the final pickaxe.

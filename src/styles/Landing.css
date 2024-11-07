@@ -204,7 +204,7 @@
 }
 
 .demo-caption {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   color: rgba(233, 229, 224, 0.5);
   font-size: 0.9rem;
   line-height: 1.6;
@@ -499,4 +499,18 @@
   .other-projects-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.video-fallback-link {
+  font-size: 0.8rem;
+  color: #666;
+  text-decoration: underline;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: -0.5rem;
+  text-align: center;
+}
+
+.video-fallback-link:hover {
+  color: #888;
 }
