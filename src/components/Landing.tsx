@@ -138,7 +138,7 @@ const Landing: React.FC = () => {
                   The main purpose of the benchmarking system is mainly to make identifying areas for improvement easy by providing detailed metrics of agent performance.
                 </p>
                 <p className="benchmark-description">
-                  It works by creating a fresh minecraft server, giving the agent a goal, waiting for it to complete the goal, then restarting the server until the specified amount of runs is completed.
+                  It works by creating a fresh minecraft server, giving the agent a goal, waiting for it to complete the goal, then repeating until the specified amount of runs is completed.
                 </p>
                 <div className="benchmark-grid">
                   <div className="benchmark-item">
