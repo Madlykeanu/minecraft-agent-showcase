@@ -86,6 +86,14 @@
   flex-direction: column;
   gap: 1.5rem;
   color: #E9E5E0;
+  min-height: 300px;
+  justify-content: space-between;
+}
+
+.feature-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .feature-card p {
@@ -513,4 +521,29 @@
 
 .video-fallback-link:hover {
   color: #888;
+}
+
+.project-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.project-link {
+  display: inline-block;
+  color: #E9E5E0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+  margin-top: auto;
+}
+
+.project-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
 }

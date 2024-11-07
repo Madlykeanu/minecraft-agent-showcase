@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiArrowRight, FiCode, FiCpu, FiBox, FiTerminal, FiYoutube, FiArrowUp } from 'react-icons/fi';
+import { FiArrowRight, FiCode, FiCpu, FiHome, FiYoutube, FiArrowUp } from 'react-icons/fi';
 import '../styles/Landing.css';
 import stoneTexture from '../images/minecraft-stone.jpg';
 import individualRun from '../images/benchmark-run1.png';
 import benchmarkSummary from '../images/benchmark-run-summary.png';
+import quizzifyLogo from '../images/quizzify-Q.png';
 
 const Landing: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -240,14 +241,20 @@ const Landing: React.FC = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="feature-card-header">
-              <FiTerminal size={24} />
-              <h3>Project Alpha</h3>
+              <FiHome size={24} />
+              <h3>Towny2</h3>
             </div>
             <p>
-              A sophisticated data processing pipeline that handles real-time analytics 
-              and visualization. Built with Python and React, it processes millions of 
-              data points efficiently.
+              Rewrite of the popular towny plugin for minecraft servers, has some feature's i think are pretty cool like renting plots, players actually owning the plots they purchase, able to give town role access to certain commands as mayor and more. not to mention MUCH lighter(only 12k lines of code compared to 100k in og towny).
             </p>
+            <a 
+              href="https://github.com/earthvision/towny2" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              View on GitHub
+            </a>
           </motion.div>
 
           <motion.div 
@@ -255,14 +262,24 @@ const Landing: React.FC = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="feature-card-header">
-              <FiBox size={24} />
-              <h3>Project Beta</h3>
+              <img 
+                src={quizzifyLogo} 
+                alt="Quizzify Logo" 
+                className="project-icon"
+              />
+              <h3>Quizzify</h3>
             </div>
             <p>
-              An automated testing framework that integrates with CI/CD pipelines to 
-              ensure code quality. Features include parallel test execution and detailed 
-              reporting capabilities.
+              My unreleased mobile app utilizing AI to help you learn difficult topics using a unique spaced repetition algorithm and constant self testing with tests generated from existing coursework(dont judge the website too hard most of the stuff there is unfinished).
             </p>
+            <a 
+              href="https://quizzify.ca" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              Visit Website
+            </a>
           </motion.div>
         </div>
       </section>
