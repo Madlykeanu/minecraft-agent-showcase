@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiArrowRight, FiCode, FiCpu, FiBox, FiTerminal } from 'react-icons/fi';
 import '../styles/Landing.css';
+import stoneTexture from '../images/minecraft-stone.jpg';
 
 const Landing: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,7 +11,16 @@ const Landing: React.FC = () => {
     <div className="landing-container">
       <header className="top-bar">
         <div className="logo-container">
-          <h1>MC Agent Lab</h1>
+          <h1 
+            className="minecraft-logo" 
+            style={{ 
+              backgroundImage: `url(${stoneTexture})`,
+              backgroundSize: '120px 120px',
+              backgroundRepeat: 'repeat'
+            }}
+          >
+            MC Agent Lab
+          </h1>
         </div>
         <div className="nav-links">
           <a href="#experiments">Experiments</a>
@@ -20,6 +30,45 @@ const Landing: React.FC = () => {
           </a>
         </div>
       </header>
+
+      <section className="demo-video-section">
+        <div className="video-grid">
+          <div className="video-container">
+            <video 
+              className="demo-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/videos/mc-agent-1-demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p className="demo-caption">
+              experimental AI agent autonomously gathering wood using self-generated Mineflayer code. 
+              The agent receives a natural language command to collect logs and store them in a chest, 
+              then dynamically writes and executes the necessary code.
+            </p>
+          </div>
+
+          <div className="video-container">
+            <video 
+              className="demo-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/videos/mc-agent-benchmark.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p className="demo-caption">
+              MC-Agent completing "get a stone pickaxe" from scratch in under 80 seconds. 
+              The agent autonomously gathers wood, crafts tools, mines stone, and crafts the final pickaxe.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="hero-section">
         <motion.div 
