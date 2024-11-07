@@ -285,6 +285,13 @@
   margin-top: 0.5rem;
 }
 
+.benchmark-context {
+  font-size: 0.9rem;
+  color: #E9E5E0;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
 /* Add responsive design for mobile */
 @media (max-width: 768px) {
   .video-grid {
@@ -393,4 +400,12 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+}
+
+.benchmark-description {
+  color: #E9E5E0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
 }

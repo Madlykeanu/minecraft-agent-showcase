@@ -67,7 +67,7 @@ const Landing: React.FC = () => {
               Your browser does not support the video tag.
             </video>
             <p className="demo-caption">
-              MC-Agent completing "stone pickaxe" scenario from scratch in under 80 seconds. 
+              MC-Agent completing "stone pickaxe" scenario from scratch in under 80 seconds using gpt-4o-mini. 
               The agent autonomously gathers wood, crafts tools, mines stone, and crafts the final pickaxe.
             </p>
           </div>
@@ -87,44 +87,59 @@ const Landing: React.FC = () => {
             </div>
             <p>
               A heavily modified fork of Mindcraft with an integrated benchmarking framework 
-              for evaluating agent performance.
+              for evaluating agent performance. 
+            </p>
+            <p>
+              this is pretty much my main passion project as of right now as i work on it every day.
+            </p>
+
+            <p>
+              
             </p>
 
             <div className="feature-sections">
               <div className="feature-section">
                 <h4>Performance Metrics</h4>
+                <p className="benchmark-context">
+                  Results from the stone_pickaxe benchmark scenario(using gpt-4o-mini):
+                </p>
                 <div className="comparison-grid">
                   <div className="metric">
-                    <span className="metric-label">Stone Pickaxe Speed</span>
+                    <span className="metric-label">Speed</span>
                     <div className="comparison">
-                      <div className="old">Original: 150-250s</div>
-                      <div className="new">MC-Agent: 70-100s</div>
+                      <div className="old">Mindcraft: 140-260s</div>
+                      <div className="new">MC-Agent: 70-105s</div>
                     </div>
                   </div>
                   <div className="metric">
                     <span className="metric-label">API Efficiency</span>
                     <div className="comparison">
-                      <div className="old">Original: 20-30 calls</div>
-                      <div className="new">MC-Agent: 9-12 calls</div>
+                      <div className="old">Mindcraft: 22-34 calls</div>
+                      <div className="new">MC-Agent: 9-14 calls</div>
                     </div>
                   </div>
                 </div>
-                <p className="note">* 9 API calls represents perfect decision-making</p>
+                <p className="note">* 9 API calls represents perfect AI decision-making in this specific scenario</p>
               </div>
 
               <div className="feature-section">
                 <h4>Framework Features</h4>
                 <ul>
-                  <li>Standardized testing scenarios</li>
+                  <li>Can repeatedly test performance in specific scenarios</li>
                   <li>Comprehensive performance tracking</li>
-                  <li>Task completion time measurement</li>
                   <li>Efficiency metrics and breakdown</li>
                   <li>Experimental task decomposition system</li>
                 </ul>
               </div>
 
               <div className="feature-section">
-                <h4>Benchmark Results</h4>
+                <h4>Benchmarking system</h4>
+                <p className="benchmark-description">
+                  The main purpose of the benchmarking system is mainly to make identifying areas for improvement easy by providing detailed metrics of agent performance.
+                </p>
+                <p className="benchmark-description">
+                  It works by creating a fresh minecraft server, giving the agent a goal, waiting for it to complete the goal, then restarting the server until the specified amount of runs is completed.
+                </p>
                 <div className="benchmark-grid">
                   <div className="benchmark-item">
                     <img 
@@ -185,7 +200,7 @@ const Landing: React.FC = () => {
       </section>
 
       <footer className="footer-section">
-        <p>© {new Date().getFullYear()} MC Agent Lab. Created with love by Madlykeanu</p>
+        <p>{new Date().getFullYear()} MC Agent Lab. Created with love by Madlykeanu</p>
         <div className="social-links">
           <a href="https://github.com/madlykeanu" target="_blank" rel="noopener noreferrer">
             GitHub
