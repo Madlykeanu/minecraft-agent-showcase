@@ -45,9 +45,8 @@ const Landing: React.FC = () => {
               Your browser does not support the video tag.
             </video>
             <p className="demo-caption">
-              experimental AI agent autonomously gathering wood using self-generated Mineflayer code. 
-              The agent receives a natural language command to collect logs and store them in a chest, 
-              then dynamically writes and executes the necessary code.
+             MC-agent-1 autonomously gathering wood using self-generated Mineflayer code. 
+              The agent receives a natural language command and then dynamically writes and executes the necessary code to complete that specific task.
             </p>
           </div>
 
