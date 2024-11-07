@@ -45,7 +45,7 @@ const Landing: React.FC = () => {
               Your browser does not support the video tag.
             </video>
             <p className="demo-caption">
-             MC-agent-1 autonomously gathering wood using self-generated Mineflayer code. 
+              MC-agent-1 gathering wood using self-generated Mineflayer code. 
               The agent receives a natural language command and then dynamically writes and executes the necessary code to complete that specific task.
             </p>
           </div>
@@ -69,97 +69,92 @@ const Landing: React.FC = () => {
         </div>
       </section>
 
-      <section className="hero-section">
-        <motion.div 
-          className="hero-content"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="hero-title">
-            Minecraft Agent Experiments <span className="hero-emoji">🤖</span>
-          </h1>
-          <p className="hero-tagline">
-            Exploring AI Possibilities in Minecraft
-          </p>
-          <p className="hero-description">
-            Discover a collection of experiments using Minecraft's agent API to create intelligent behaviors, automated systems, and creative solutions.
-          </p>
-          <div className="cta-button-wrapper">
-            <a href="#experiments" className="cta-button">
-              View Experiments <FiArrowRight />
-            </a>
-          </div>
-        </motion.div>
-      </section>
-
       <section className="features-section" id="experiments">
         <h2>Featured Experiments</h2>
         <div className="features-container">
           <motion.div 
             className="feature-card"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
           >
-            <h3><FiCode /> Pathfinding Agent</h3>
+            <div className="feature-card-header">
+              <FiCode size={24} />
+              <h3>MC-Agent-1</h3>
+            </div>
             <p>
-              An intelligent agent that can navigate complex terrain and find optimal paths to targets.
+              An experimental agent developed in a week that dynamically writes and executes 
+              its own code to complete specific Minecraft tasks.
             </p>
+            
+            <div className="feature-sections">
+              <div className="feature-section">
+                <h4>Key Capabilities</h4>
+                <ul>
+                  <li>Dynamic code generation using GPT-4 or Claude</li>
+                  <li>Real-time execution and monitoring</li>
+                  <li>Automatic error handling and code regeneration</li>
+                  <li>Task-specific optimization</li>
+                </ul>
+              </div>
+
+              <div className="feature-section">
+                <h4>Technical Details</h4>
+                <ul>
+                  <li>Generates task-specific JavaScript code using GPT-4 or Claude-3.5</li>
+                  <li>Real-time code execution and monitoring</li>
+                  <li>Automatic error detection and code regeneration</li>
+                  <li>Iterative improvement through execution feedback</li>
+                </ul>
+              </div>
+            </div>
           </motion.div>
           
           <motion.div 
             className="feature-card"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
           >
-            <h3><FiCpu /> Resource Collector</h3>
-            <p>
-              Automated resource gathering system with smart inventory management and efficient collection strategies.
-            </p>
-          </motion.div>
-
-          <motion.div 
-            className="feature-card"
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3><FiBox /> Building Assistant</h3>
-            <p>
-              Agent that can help construct predefined structures and follow building patterns.
-            </p>
-          </motion.div>
-
-          <motion.div 
-            className="feature-card"
-            whileHover={{ scale: 1.05 }}
-          >
-            <h3><FiTerminal /> Command Interface</h3>
-            <p>
-              Advanced command system for controlling and programming agent behaviors in real-time.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="how-it-works-section">
-        <h2>Technical Overview</h2>
-        <div className="how-it-works-steps">
-          <div className="step">
-            <div className="step-content">
-              <h3>Agent Architecture</h3>
-              <p>
-                Learn about the underlying architecture that powers these Minecraft agents,
-                including decision-making systems and behavior trees.
-              </p>
+            <div className="feature-card-header">
+              <FiCpu size={24} />
+              <h3>MC-Agent</h3>
             </div>
-          </div>
+            <p>
+              A heavily modified fork of Mindcraft with an integrated benchmarking framework 
+              for evaluating agent performance.
+            </p>
 
-          <div className="step">
-            <div className="step-content">
-              <h3>Implementation Details</h3>
-              <p>
-                Explore the technical implementation, including code samples and 
-                explanations of key algorithms.
-              </p>
+            <div className="feature-sections">
+              <div className="feature-section">
+                <h4>Performance Metrics</h4>
+                <div className="comparison-grid">
+                  <div className="metric">
+                    <span className="metric-label">Stone Pickaxe Speed</span>
+                    <div className="comparison">
+                      <div className="old">Original: 150-250s</div>
+                      <div className="new">MC-Agent: 70-100s</div>
+                    </div>
+                  </div>
+                  <div className="metric">
+                    <span className="metric-label">API Efficiency</span>
+                    <div className="comparison">
+                      <div className="old">Original: 20-30 calls</div>
+                      <div className="new">MC-Agent: 9-12 calls</div>
+                    </div>
+                  </div>
+                </div>
+                <p className="note">* 9 API calls represents perfect decision-making</p>
+              </div>
+
+              <div className="feature-section">
+                <h4>Framework Features</h4>
+                <ul>
+                  <li>Standardized testing scenarios</li>
+                  <li>Comprehensive performance tracking</li>
+                  <li>Task completion time measurement</li>
+                  <li>Efficiency metrics and breakdown</li>
+                  <li>Experimental task decomposition system</li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
