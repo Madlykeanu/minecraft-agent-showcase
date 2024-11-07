@@ -6,6 +6,7 @@ import stoneTexture from '../images/minecraft-stone.jpg';
 import individualRun from '../images/benchmark-run1.png';
 import benchmarkSummary from '../images/benchmark-run-summary.png';
 import quizzifyLogo from '../images/quizzify-Q.png';
+import taskDecompositionFail from '../images/task-decomposition-fail.png';
 
 const Landing: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -157,7 +158,7 @@ const Landing: React.FC = () => {
               </div>
 
               <div className="feature-section">
-                <h4>Framework Features</h4>
+                <h4>Unique Features</h4>
                 <ul>
                   <li>Can repeatedly test performance in specific scenarios</li>
                   <li>Comprehensive performance tracking</li>
@@ -197,6 +198,29 @@ const Landing: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="feature-section">
+                <h4>Experimental Task Decomposition System</h4>
+                <p className="benchmark-description">
+                  The toggleable task decomposition system breaks down complex goals into smaller, manageable subtasks that can be executed sequentially.
+                </p>
+                <p className="benchmark-description">
+                  Currently this mode performs significantly worse then the normal mode but with enough tuning i think this may have potential to prevent the loops current agents tend to go in.
+                </p>
+                <div className="benchmark-item">
+                  <img 
+                    src={taskDecompositionFail} 
+                    alt="Failed Task Decomposition Run" 
+                    className="benchmark-image"
+                  />
+                  <p className="benchmark-caption">
+                    A failed stone_pickaxe run using task decomposition mode showing 18 API calls and timing out after 180 seconds
+                  </p>
+                </div>
+                <p className="benchmark-description">
+                  For example, crafting a stone pickaxe is automatically broken down into: gather 3 logs → craft 3 logs into planks → craft 4 sticks → craft 1 wooden pickaxe → mine 3 stone → craft 1 stone pickaxe
+                </p>
+              </div>
             </div>
           </motion.div>
           
@@ -223,7 +247,7 @@ const Landing: React.FC = () => {
                   <li>Dynamic code generation using GPT-4o or Claude 3-5 sonnet</li>
                   <li>Real-time execution and monitoring</li>
                   <li>Automatic error handling and code regeneration</li>
-                  <li>Code optimized to the specific task and situation</li>
+                  <li>Generates code optimized to the specific task and situation</li>
                 </ul>
               </div>
 
@@ -245,7 +269,7 @@ const Landing: React.FC = () => {
               <h3>Towny2</h3>
             </div>
             <p>
-              Rewrite of the popular towny plugin for minecraft servers, has some feature's i think are pretty cool like renting plots, players actually owning the plots they purchase, able to give town role access to certain commands as mayor and more. not to mention MUCH lighter(only 12k lines of code compared to 100k in og towny).
+              Rewrite of the popular towny plugin for minecraft servers, has some feature's i think are pretty cool like renting plots, players actually owning the plots they purchase, able to give town role access to certain commands as mayor and more. not to mention MUCH lighter.
             </p>
             <a 
               href="https://github.com/earthvision/towny2" 
