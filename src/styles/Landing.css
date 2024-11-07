@@ -111,8 +111,10 @@
 
 .feature-section h4 {
   color: #81C784;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   margin-bottom: 1rem;
+  opacity: 0.9;
 }
 
 .how-it-works-section {
@@ -198,7 +200,7 @@
 
 .demo-caption {
   margin-top: 1.5rem;
-  color: rgba(233, 229, 224, 0.7);
+  color: rgba(233, 229, 224, 0.5);
   font-size: 0.9rem;
   line-height: 1.6;
   text-align: center;
@@ -236,7 +238,9 @@
 .feature-details li {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  color: #E9E5E0;
+  opacity: 0.9;
 }
 
 .comparison-grid {
@@ -253,8 +257,9 @@
 }
 
 .metric-label {
-  font-weight: bold;
-  color: #fff;
+  font-weight: 300;
+  color: #E9E5E0;
+  opacity: 0.9;
 }
 
 .comparison {
@@ -375,9 +380,12 @@
 
 .benchmark-caption {
   font-size: 0.9rem;
-  color: rgba(233, 229, 224, 0.7);
+  color: rgba(233, 229, 224, 0.3);
   text-align: center;
   line-height: 1.4;
+  font-style: italic;
+  max-width: 450px;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 768px) {

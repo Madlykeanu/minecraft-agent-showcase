@@ -60,9 +60,7 @@ const Landing: React.FC = () => {
             <h3 className="video-title">MC-Agent</h3>
             <video 
               className="demo-video"
-              autoPlay
-              muted
-              loop
+              controls
               playsInline
             >
               <source src="/videos/mc-agent-benchmark.mp4" type="video/mp4" />
