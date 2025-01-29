@@ -26,6 +26,7 @@ const Landing: React.FC = () => {
           </h1>
         </div>
         <div className="nav-links">
+          <a href="/blog">Blog</a>
           <a href="#experiments">Experiments</a>
           <a href="https://github.com/madlykeanu" target="_blank" rel="noopener noreferrer">
             GitHub
