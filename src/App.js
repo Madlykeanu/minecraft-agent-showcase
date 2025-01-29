@@ -1,12 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './components/Landing.tsx';
+import Blog from './components/Blog.tsx';
+import './index.css';
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <Landing />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
     </Router>
   );
 }
