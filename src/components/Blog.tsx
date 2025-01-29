@@ -35,7 +35,7 @@ const Blog: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-zinc-950">
+    <div className="min-h-screen bg-zinc-950 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
         <Link to="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors group">
           <span className="w-8 h-8 rounded-full bg-zinc-900 flex items-center justify-center group-hover:bg-red-500/10 transition-colors">
