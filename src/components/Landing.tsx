@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiArrowRight, FiCode, FiCpu, FiHome, FiYoutube, FiArrowUp } from 'react-icons/fi';
+import { FiArrowRight, FiCode, FiCpu, FiHome } from 'react-icons/fi';
 import '../styles/Landing.css';
 import stoneTexture from '../images/minecraft-stone.jpg';
 import individualRun from '../images/benchmark-run1.png';
@@ -26,22 +26,6 @@ const Landing: React.FC = () => {
           </h1>
         </div>
         <div className="nav-links">
-          <div className="youtube-pointer">
-            <span>unrelated but sub to my silly youtube channel</span>
-            <FiArrowUp size={14} />
-          </div>
-          <a 
-            href="https://youtube.com/@madlykeanu" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="youtube-button"
-          >
-            <FiYoutube size={20} />
-            YouTube
-            <span className="subscriber-count">
-              133K
-            </span>
-          </a>
           <a href="#experiments">Experiments</a>
           <a href="https://github.com/madlykeanu" target="_blank" rel="noopener noreferrer">
             GitHub
