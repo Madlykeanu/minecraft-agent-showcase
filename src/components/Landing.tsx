@@ -5,7 +5,6 @@ import '../styles/Landing.css';
 import stoneTexture from '../images/minecraft-stone.jpg';
 import individualRun from '../images/benchmark-run1.png';
 import benchmarkSummary from '../images/benchmark-run-summary.png';
-import quizzifyLogo from '../images/quizzify-Q.png';
 import taskDecompositionFail from '../images/task-decomposition-fail.png';
 
 const Landing: React.FC = () => {
@@ -40,7 +39,7 @@ const Landing: React.FC = () => {
             <FiYoutube size={20} />
             YouTube
             <span className="subscriber-count">
-              127K
+              133K
             </span>
           </a>
           <a href="#experiments">Experiments</a>
@@ -124,9 +123,7 @@ const Landing: React.FC = () => {
               A heavily modified fork of Mindcraft with an integrated benchmarking framework 
               for evaluating agent performance. 
             </p>
-            <p>
-              this is pretty much my main passion project as of right now as i work on it every day.
-            </p>
+            
 
             <p>
               
@@ -253,57 +250,6 @@ const Landing: React.FC = () => {
 
               
             </div>
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="other-projects-section">
-        <h2>Other Programming Projects</h2>
-        <div className="other-projects-grid">
-          <motion.div 
-            className="feature-card"
-            whileHover={{ scale: 1.02 }}
-          >
-            <div className="feature-card-header">
-              <FiHome size={24} />
-              <h3>Towny2</h3>
-            </div>
-            <p>
-              Rewrite of the popular towny plugin for minecraft servers, has some feature's i think are pretty cool like renting plots, players actually owning the plots they purchase, able to give town role access to certain commands as mayor and more. not to mention MUCH lighter.
-            </p>
-            <a 
-              href="https://github.com/earthvision/towny2" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              View on GitHub
-            </a>
-          </motion.div>
-
-          <motion.div 
-            className="feature-card"
-            whileHover={{ scale: 1.02 }}
-          >
-            <div className="feature-card-header">
-              <img 
-                src={quizzifyLogo} 
-                alt="Quizzify Logo" 
-                className="project-icon"
-              />
-              <h3>Quizzify</h3>
-            </div>
-            <p>
-              My unreleased mobile app utilizing AI to help you learn difficult topics using a unique spaced repetition algorithm and constant self testing with tests generated from existing coursework(dont judge the website too hard most of the stuff there is unfinished).
-            </p>
-            <a 
-              href="https://quizzify.ca" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              Visit Website
-            </a>
           </motion.div>
         </div>
       </section>
