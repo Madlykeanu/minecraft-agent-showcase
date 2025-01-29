@@ -7,30 +7,30 @@ const Blog: React.FC = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "Why Custom Code Beats WordPress: The Modern Web Development Advantage",
-      excerpt: "Discover why building websites with modern frameworks and custom code provides superior results compared to traditional WordPress solutions.",
-      category: "Development",
+      title: "Why LLMs are Revolutionizing Game AI Agents",
+      excerpt: "Explore how large language models are transforming the way AI agents interact and learn in gaming environments, particularly in Minecraft.",
+      category: "AI Research",
       readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      slug: "modern-web-development-vs-wordpress"
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      slug: "llms-revolutionizing-game-ai"
     },
     {
       id: 2,
-      title: "5 Tech Trends Reshaping Business in 2024",
-      excerpt: "From AI-driven automation to edge computing, discover the key technology trends that are transforming how businesses operate and compete in today's digital landscape.",
-      category: "Technology",
+      title: "Benchmarking AI Agents: Metrics That Matter",
+      excerpt: "Deep dive into effective methods for measuring AI agent performance, from task completion rates to API efficiency in Minecraft environments.",
+      category: "Technical",
       readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      slug: "emerging-tech-trends-2024"
+      image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      slug: "ai-agent-benchmarking"
     },
     {
       id: 3,
-      title: "New Year, New Tech: Small Business Success in Northern Michigan for 2025",
-      excerpt: "Starting the year with essential tech strategies for Up North Michigan businesses - from tourist season optimization to year-round digital presence.",
-      category: "Local Business",
+      title: "Task Decomposition in AI Agents: Challenges and Solutions",
+      excerpt: "Analyzing the complexities of breaking down complex tasks for AI agents and exploring potential solutions for improved performance.",
+      category: "Research",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1610878180933-123728745d22?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-      slug: "new-year-tech-trends-northern-michigan"
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+      slug: "task-decomposition-ai-agents"
     }
   ];
 
@@ -49,7 +49,7 @@ const Blog: React.FC = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl">Our Blog</h1>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-zinc-400">
-            Insights and expertise in web development and design
+            Experiments and technical deep-dives into AI agents in Minecraft
           </p>
         </div>
 
